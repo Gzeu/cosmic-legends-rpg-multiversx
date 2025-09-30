@@ -1,0 +1,11 @@
+[package]
+name = "shared"
+version = "0.1.0"
+edition = "2021"
+authors = ["Pricop George <pricopgeorge@gmail.com>"]
+
+[dependencies]
+multiversx-sc = { workspace = true }
+multiversx-sc-derive = { workspace = true }
+serde = { workspace = true }
+chrono = { workspace = true }

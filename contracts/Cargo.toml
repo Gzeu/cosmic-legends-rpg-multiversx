@@ -1,0 +1,29 @@
+[workspace]
+members = [
+    "ai-heroes",
+    "dynamic-equipment", 
+    "ai-battle",
+    "shared"
+]
+resolver = "2"
+
+[workspace.dependencies]
+multiversx-sc = "0.47.0"
+multiversx-sc-derive = "0.47.0"
+multiversx-sc-modules = "0.47.0"
+multiversx-sc-scenario = "0.47.0"
+serde = { version = "1.0", features = ["derive"] }
+hex = "0.4"
+hex-literal = "0.4"
+rand = "0.8"
+chrono = { version = "0.4", features = ["serde"] }
+sha3 = "0.10"
+base64 = "0.21"
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+overflow-checks = false
