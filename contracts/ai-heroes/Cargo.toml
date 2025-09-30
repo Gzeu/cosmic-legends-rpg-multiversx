@@ -1,0 +1,24 @@
+[package]
+name = "ai-heroes"
+version = "0.1.0"
+edition = "2021"
+authors = ["Pricop George <pricopgeorge@gmail.com>"]
+
+[lib]
+name = "ai_heroes"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ai-heroes-wasm"
+path = "wasm/src/lib.rs"
+
+[dependencies]
+multiversx-sc = { workspace = true }
+multiversx-sc-derive = { workspace = true }
+multiversx-sc-modules = { workspace = true }
+shared = { path = "../shared" }
+rand = { workspace = true }
+sha3 = { workspace = true }
+
+[dev-dependencies]
+multiversx-sc-scenario = { workspace = true }
