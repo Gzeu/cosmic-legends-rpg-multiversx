@@ -3,14 +3,16 @@
 multiversx_sc::imports!();
 multiversx_sc::derive_imports!();
 
+// Core modules in logical order
+pub mod constants;
 pub mod types;
+pub mod errors;
 pub mod events;
 pub mod storage;
-pub mod errors;
-pub mod constants;
 
-pub use types::*;
+// Re-export all public items
+pub use constants::*;
+pub use errors::*;
 pub use events::*;
 pub use storage::*;
-pub use errors::*;
-pub use constants::*;
+pub use types::*;
