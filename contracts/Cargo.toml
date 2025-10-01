@@ -1,8 +1,6 @@
 [workspace]
 members = [
     "ai-heroes",
-    "dynamic-equipment", 
-    "ai-battle",
     "shared"
 ]
 resolver = "2"
